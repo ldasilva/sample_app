@@ -16,7 +16,7 @@ require 'securerandom'
 def secure_token
   token_file = Rails.root.join('.secret')
   if File.exist?(token_file)
-    # Use the existing token.
+    '820477d9a28aa258c63d0b315871aa070797e53565d42eb68705f1f47cab2fe221ca7cc89eea01a077c5ac87fd6e528dc92453e47a89fce4006734d03e48b0a2'
     File.read(token_file).chomp
   else
     # Generate a new token and store it in token_file.
